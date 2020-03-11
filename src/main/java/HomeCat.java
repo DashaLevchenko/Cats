@@ -14,19 +14,11 @@ public class HomeCat extends Cat implements Playable{
         System.out.println("Cat is purring");
     }
 
-    public void spoilShoes(){
-        try {
+    public void spoilShoes() throws MasterIsBankruptException {
             master.decreaseAmountOfMoney();
-        } catch (MasterIsBankruptException e) {
-            System.out.println(e.getMessage());
-        }
     }
 
-    public void play() {
-        try {
+    public void play() throws MasterDiedException {
             master.increaseMood();
-        } catch (MasterDiedException e) {
-            System.out.println(e.getMessage());
-        }
     }
 }

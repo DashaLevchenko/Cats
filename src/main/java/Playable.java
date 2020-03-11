@@ -1,3 +1,5 @@
+import Eceptions.MasterDiedException;
+
 public interface Playable {
-    void play();
+    void play() throws MasterDiedException;
 }
