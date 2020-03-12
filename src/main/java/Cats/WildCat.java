@@ -1,8 +1,10 @@
+package Cats;
+
 import Exceptions.MasterDiedException;
 
 public class WildCat extends Cat implements Playable{
 
-    WildCat(String name) {
+    public WildCat(String name) {
         super(name);
     }
 

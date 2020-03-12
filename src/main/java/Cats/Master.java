@@ -1,3 +1,5 @@
+package Cats;
+
 import Exceptions.MasterDiedException;
 import Exceptions.MasterIsBankruptException;
 
@@ -10,7 +12,7 @@ public class Master {
     private int mood;
     private String name;
 
-    Master(String name, int amountOfMoney, int mood) throws IllegalArgumentException, MasterIsBankruptException {
+    public Master(String name, int amountOfMoney, int mood) throws IllegalArgumentException, MasterIsBankruptException {
         this.name = name;
         setAmountOfMoney(amountOfMoney);
         setMood(mood);
@@ -39,7 +41,7 @@ public class Master {
 
     public void increaseMood() throws MasterDiedException {
         if (mood > MAX_MOOD) {
-            throw new MasterDiedException("Master died by happy");
+            throw new MasterDiedException("Cats.Master died by happy");
         } else {
             mood++;
         }

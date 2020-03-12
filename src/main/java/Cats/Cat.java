@@ -1,3 +1,5 @@
+package Cats;
+
 abstract class Cat {
     private String name;
     private Breed breed;

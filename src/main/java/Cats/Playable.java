@@ -1,3 +1,5 @@
+package Cats;
+
 import Exceptions.MasterDiedException;
 
 public interface Playable {

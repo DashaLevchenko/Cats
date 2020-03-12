@@ -1,3 +1,7 @@
+import Cats.Breed;
+import Cats.HomeCat;
+import Cats.Master;
+import Cats.WildCat;
 import Exceptions.MasterDiedException;
 import Exceptions.MasterIsBankruptException;
 

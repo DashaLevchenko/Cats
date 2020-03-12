@@ -1,10 +1,12 @@
+package Cats;
+
 import Exceptions.MasterDiedException;
 import Exceptions.MasterIsBankruptException;
 
 public class HomeCat extends Cat implements Playable {
     private Master master;
 
-    HomeCat(Master master, String name, Breed breed) {
+    public HomeCat(Master master, String name, Breed breed) {
         super(name, breed);
         this.master = master;
     }
