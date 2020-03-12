@@ -6,11 +6,19 @@ public class Master {
     private static final int MIN_MONEY = 1;
 
     private int amountOfMoney;
+    private int health = 10;
     private int mood;
+    private String name;
 
-    Master(int amountOfMoney, int mood) throws IllegalArgumentException, MasterIsBankruptException {
+    Master(String name, int amountOfMoney, int mood) throws IllegalArgumentException, MasterIsBankruptException {
+        this.name = name;
         setAmountOfMoney(amountOfMoney);
         setMood(mood);
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 
     private void setMood(int mood) throws IllegalArgumentException {
@@ -23,7 +31,7 @@ public class Master {
 
     private void setAmountOfMoney(int amountOfMoney) throws MasterIsBankruptException {
         if (amountOfMoney < MIN_MONEY) {
-            throw new MasterIsBankruptException("Ooops, master is bankrupt, he can't feed cats");
+            throw new MasterIsBankruptException("Ooops, master is bankrupt.");
         } else {
             this.amountOfMoney = amountOfMoney;
         }
@@ -39,6 +47,15 @@ public class Master {
 
     public void decreaseAmountOfMoney() throws MasterIsBankruptException {
         amountOfMoney -= 10;
-      setAmountOfMoney(amountOfMoney);
+        setAmountOfMoney(amountOfMoney);
     }
+
+    public void reduceHealth() throws MasterDiedException {
+        if (health > 0) {
+            health--;
+        } else {
+            throw new MasterDiedException(name+" died!");
+        }
+    }
+
 }
