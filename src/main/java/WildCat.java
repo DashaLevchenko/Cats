@@ -1,14 +1,17 @@
 public class WildCat extends Cat implements Playable{
-    public  void hatePeople(){
 
-    }
-    public void saveWorld(){
-
-
-
+    WildCat(String name) {
+        super(name);
     }
 
-    public void play() {
+    public  String hatePeople(){
+        return getName()+": I hate people";
+    }
+    public String saveWorld(){
+        return  getName()+": I'm killing Hitler";
+    }
 
+    public String play() {
+        return  getName()+": I'm playing with rabbits";
     }
 }

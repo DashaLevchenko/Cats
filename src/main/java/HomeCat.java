@@ -1,24 +1,25 @@
-import Eceptions.MasterDiedException;
-import Eceptions.MasterIsBankruptException;
+import Exceptions.MasterDiedException;
+import Exceptions.MasterIsBankruptException;
 
-public class HomeCat extends Cat implements Playable{
+public class HomeCat extends Cat implements Playable {
     private Master master;
 
-    HomeCat(Master master, Breed breed, String name){
+    HomeCat(Master master, String name, Breed breed) {
+        super(name, breed);
         this.master = master;
-        setBreed(breed);
-        setName(name);
     }
 
-    public void layOnSofa() {
-        System.out.println("Cat is purring");
+    public String layOnSofa() {
+        return  getName() + ": I'm laying on sofa and purring";
     }
 
-    public void spoilShoes() throws MasterIsBankruptException {
-            master.decreaseAmountOfMoney();
+    public String spoilShoes() throws MasterIsBankruptException {
+        master.decreaseAmountOfMoney();
+        return getName()+": I'm spoiling shoes";
     }
 
-    public void play() throws MasterDiedException {
-            master.increaseMood();
+    public String play() throws MasterDiedException {
+        master.increaseMood();
+        return  getName()+": I'm playing with my owner";
     }
 }

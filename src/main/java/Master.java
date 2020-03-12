@@ -1,5 +1,5 @@
-import Eceptions.MasterDiedException;
-import Eceptions.MasterIsBankruptException;
+import Exceptions.MasterDiedException;
+import Exceptions.MasterIsBankruptException;
 
 public class Master {
     private static final int MAX_MOOD = 10;
@@ -38,6 +38,7 @@ public class Master {
     }
 
     public void decreaseAmountOfMoney() throws MasterIsBankruptException {
-      setAmountOfMoney(amountOfMoney--);
+        amountOfMoney -= 10;
+      setAmountOfMoney(amountOfMoney);
     }
 }

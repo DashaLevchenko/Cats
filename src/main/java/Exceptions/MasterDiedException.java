@@ -1,4 +1,4 @@
-package Eceptions;
+package Exceptions;
 
 public class MasterDiedException extends Exception {
 

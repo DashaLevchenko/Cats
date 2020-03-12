@@ -1,4 +1,4 @@
-package Eceptions;
+package Exceptions;
 
 public class MasterIsBankruptException extends Exception {
     public MasterIsBankruptException(String message) {

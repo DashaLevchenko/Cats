@@ -1,5 +1,5 @@
-import Eceptions.MasterDiedException;
+import Exceptions.MasterDiedException;
 
 public interface Playable {
-    void play() throws MasterDiedException;
+    String play() throws MasterDiedException;
 }
