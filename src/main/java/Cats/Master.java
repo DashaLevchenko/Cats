@@ -8,6 +8,11 @@ public class Master {
     private static final int MIN_MONEY = 1;
 
     private int amountOfMoney;
+
+    public int getHealth() {
+        return health;
+    }
+
     private int health = 10;
     private int mood;
     private String name;
@@ -41,7 +46,7 @@ public class Master {
 
     public void increaseMood() throws MasterDiedException {
         if (mood > MAX_MOOD) {
-            throw new MasterDiedException("Cats.Master died by happy");
+            throw new MasterDiedException("Master died by happy");
         } else {
             mood++;
         }

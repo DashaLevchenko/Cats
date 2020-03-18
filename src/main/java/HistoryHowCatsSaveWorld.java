@@ -88,17 +88,16 @@ public class HistoryHowCatsSaveWorld {
 
     private static void wildCatsSaveWorld() {
         System.out.println("Then wild cat will save the world by kill Hitler.\n");
-        while (true) {
-            try {
+        try {
+            while (Hitler.getHealth() >= 0) {
                 for (WildCat wildCat : flock) {
                     System.out.println(wildCat.saveWorld() + "\n" +
                             wildCat.biteSome(Hitler));
                 }
-            } catch (MasterDiedException e) {
-                System.out.println(e.getMessage());
-                Hitler = null;
-                break;
             }
+        } catch (MasterDiedException e) {
+            System.out.println(e.getMessage());
+            Hitler = null;
         }
     }
 
