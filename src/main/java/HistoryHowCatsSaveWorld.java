@@ -24,7 +24,7 @@ public class HistoryHowCatsSaveWorld {
     }
 
     public static void aboutArchie() {
-        System.out.println("This history about persian cat. His name is Archie. His owner is Hitler.");
+        System.out.println("This history about persian cat! His name is Archie. His owner is Hitler.");
         try {
             Hitler = new Master("Hitler", 100, 2);
         } catch (MasterIsBankruptException e) {
