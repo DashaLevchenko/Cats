@@ -1,4 +1,4 @@
-package Cats;
+package cat;
 
 public enum Breed {
     PERSIAN,

@@ -1,6 +1,6 @@
-package Cats;
+package cat;
 
-import Exceptions.MasterDiedException;
+import exception.MasterDiedException;
 
 public interface Playable {
     String play() throws MasterDiedException;

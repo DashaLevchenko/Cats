@@ -1,7 +1,7 @@
-package Cats;
+package cat;
 
-import Exceptions.MasterDiedException;
-import Exceptions.MasterIsBankruptException;
+import exception.MasterDiedException;
+import exception.MasterIsBankruptException;
 
 public class Master {
     private static final int MAX_MOOD = 10;

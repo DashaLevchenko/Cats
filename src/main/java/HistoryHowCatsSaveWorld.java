@@ -1,9 +1,9 @@
-import Cats.Breed;
-import Cats.HomeCat;
-import Cats.Master;
-import Cats.WildCat;
-import Exceptions.MasterDiedException;
-import Exceptions.MasterIsBankruptException;
+import cat.Breed;
+import cat.HomeCat;
+import cat.Master;
+import cat.WildCat;
+import exception.MasterDiedException;
+import exception.MasterIsBankruptException;
 
 import java.util.ArrayList;
 

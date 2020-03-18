@@ -1,6 +1,6 @@
-package Cats;
+package cat;
 
-import Exceptions.MasterDiedException;
+import exception.MasterDiedException;
 
 public class WildCat extends Cat implements Playable{
 

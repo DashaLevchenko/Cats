@@ -1,7 +1,7 @@
-package Cats;
+package cat;
 
-import Exceptions.MasterDiedException;
-import Exceptions.MasterIsBankruptException;
+import exception.MasterDiedException;
+import exception.MasterIsBankruptException;
 
 public class HomeCat extends Cat implements Playable {
     private Master master;

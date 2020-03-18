@@ -1,4 +1,4 @@
-package Cats;
+package cat;
 
 abstract class Cat {
     private String name;
